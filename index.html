@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-head">
+        <h1>Track Your Expenses</h1>
+    </div>
+    <div class="form">
+        <div class="part1">
+            <label for="name">Expense-Name: </label>
+            <input class="input1" type="text" id="expense-name" required>
+            <label for="amount">Amount: </label>
+            <input class="input1" type="number" id="expense-amount" required>
+        </div>
+        <div class="part2">
+            <label for="category">Select-Category: </label>
+            <select class="input2" id="expense-category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="date">Date: </label>
+            <input class="input2" type="date" id="espense-date">
+        </div>
+        <div class="part3">
+            <button id="add-btn" type="submit">Add</button>
+        </div>
+        
+    </div>
+
+    <div class="expenses">
+        <div class="head">
+            <h1>Expenses</h2>
+        </div>
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Expense</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body">
+
+                </tbody>
+                <tfoot>
+                    <td id="total-name">Total</td>
+                    <td></td>
+                    <td></td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tfoot>
+            </table>
+            
+        </div>
+
+    </div>
+    <div class="total-expense">
+        <div class="expense-box">
+            <h2 id="food-expense">Food</h2>
+            <p id="food-total">Total:</p>
+        </div>
+        <div class="expense-box">
+            <h2 id="travel-expense">Travel</h2>
+            <p id="travel-total">Total:</p>
+        </div>
+        <div class="expense-box">
+            <h2 id="entertainment-expense">Entertainment</h2>
+            <p id="entertainment-total">Total:</p>
+        </div>
+        <div class="expense-box">
+            <h2 id="other-expense">Other</h2>
+            <p id="other-total">Total:</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

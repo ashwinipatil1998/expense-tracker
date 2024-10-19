@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-head{
+    height: 10%;
+    width: 70%;
+    background-color: #16423C;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: #6A9C89;
+    height: 30%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.part1{
+    /* border: 2px solid black; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2{
+    /* border: 2px solid black; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part3{
+    /* border: 2px solid black; */
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-size: 1.5em;
+    margin-right: 1%;
+}
+.input1{
+    height: 40%;
+    width: 30%;
+    margin-right: 2%;
+}
+.input2{
+    height: 40%;
+    width: 30%;
+    margin-right: 4%;
+}
+input{
+    border: none;
+    border-radius: 10px;
+    padding-left: 1%;
+    box-shadow: 5px 5px 15px gray;
+    /* background-color: rgba(0, 0, 255, 0.1); */
+    background-color:#C4DAD2;
+    opacity:0.5;
+    font-size: 1.2em;
+    color: black;
+}
+select{
+    border: none;
+    border-radius: 10px;
+    padding-left: 1%;
+    box-shadow: 5px 5px 15px gray;
+    /* background-color: rgba(0, 0, 255, 0.1); */
+    background-color:#C4DAD2;
+    opacity:0.5;
+    font-size: 1.2em;
+    color: black;
+}
+#add-btn{
+    height: 100%;
+    width: 5%;
+    background-color:#C4DAD2;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+}
+.expenses{
+    height: 50%;
+    width: 70%;
+    background-color: #C4DAD2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    height: 15%;
+    width: 100%;
+    /* background-color: cadetblue; */
+    text-align: center;
+}
+.expense-table{
+    /* height: 85%; */
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+}
+table{
+    width: 90%;
+    height: 100%;
+    border-collapse: collapse;
+
+}
+thead{
+    background-color:#6A9C89;
+    height: 10%;
+}
+th, td{
+    border: 1px solid gray;
+    font-size: 20px;
+}
+.total-expense{
+    height: 20%;
+    width: 70%;
+    background-color: #E9EFEC;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.expense-box{
+    /* border: 2px solid; */
+    height: 60%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px gray;
+    background-color: aliceblue;
+    font-size: 15px;
+}
+tr{
+    height: 40px;
+}
+#total-name, #total-amount{
+    font-weight: bolder;
+}
+.delete-btn, .edit-btn{
+    text-align: center;
+    
+}
+
+#delete-btn{
+    height: 25px;
+    width: 35%;
+    background-color:#E9EFEC;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px gray;
+}
+#edit-btn{
+    height: 25px;
+    width: 40%;
+    background-color:#E9EFEC;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px gray;
+}
+p{
+    font-size: 1.5em;
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .form{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .part1{
+        width: 66%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 5%;
+        /* background-color: rosybrown; */
+
+    }
+    .input1{
+        width: 95%;
+    }
+    .part2{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 5%;
+        /* background-color: burlywood; */
+
+    }
+    .input2{
+        width: 95%;
+    }
+    .part3{
+        width: 65%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+    }
+    #add-btn{
+        height: 85%;
+        width: 20%;
+    }
+    .expense-box{
+        width: 23%;
+        font-size: 10px;
+    }
+    #delete-btn{
+        width: 90%;
+    }
+    #edit-btn{
+        width: 80%;
+    }
+}
+
+@media (max-width:768px){
+    .main-head{
+        font-size: 12px;
+    }
+    .form{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    label{
+        font-size: 15px;
+    }
+    .part1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 5%;
+        /* background-color: rosybrown; */
+
+    }
+    .input1{
+        width: 95%;
+        font-size: 12px;
+    }
+    .part2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 5%;
+        /* background-color: burlywood; */
+
+    }
+    .input2{
+        width: 95%;
+        font-size: 12px;
+    }
+    .part3{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        /* background-color: lightcoral; */
+
+    }
+    th, td{
+        font-size: 10px;
+    }
+    tr{
+        height: 30px;
+    }
+    #add-btn{
+        height: 85%;
+        width: 20%;
+        font-size: 15px;
+    }
+    table{
+        font-size: 12px;
+    }
+    .total-expense{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .expense-box{
+        width: 45%;
+        height: 40%;
+        font-size: 10px;
+    }
+    #delete-btn{
+        width: 90%;
+        height: 20px;
+        font-size: 10px;
+    }
+    #edit-btn{
+        width: 80%;
+        height: 20px;
+        font-size: 10px;
+    }
+    
+}
+
+
+
+
